@@ -1,0 +1,9 @@
+<style type="text/css">
+img {
+    border: none
+}
+</style>
+
+<a href="[% uri_for('/') %]/?openid_identifier=https://mixi.jp"><img src="/static/images/a_150.gif" /></a>
+
+[% IF success %]success![% END %]

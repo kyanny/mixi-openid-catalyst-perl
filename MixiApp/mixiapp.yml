@@ -1,0 +1,13 @@
+# rename this file to MixiApp.yml and put a : in front of "name" if
+# you want to use yaml like in old versions of Catalyst
+name: MixiApp
+
+Plugin::Authentication:
+  default_realm: openid
+  realms:
+    openid:
+      credential:
+        class: OpenID
+      ua_class: LWPx::ParanoidAgent
+
+
